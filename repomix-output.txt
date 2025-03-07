@@ -1702,7 +1702,7 @@ export async function POST(request: Request) {
 File: app/clinic/[slug]/page.tsx
 ================
 import { notFound } from "next/navigation"
-import { db } from "@/lib/db" // or your DB connection
+import db  from "@/lib/db" // or your DB connection
 import type { Metadata } from "next"
 
 type Patient = {
